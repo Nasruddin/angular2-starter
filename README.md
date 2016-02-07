@@ -22,7 +22,7 @@ The reason I created the project was to have a starter angular 2 application wit
 
 `npm run dumpprod`
 
-To access the resource Clone [this](https://github.com/Nasruddin/jwt-auth-springboot)
+To access the resource Clone [this](https://github.com/Nasruddin/jwt-auth-springboot). After cloning the running the server it will be allow to access the resouce which will use access token to access resource.
 
 ## Contributors
 
