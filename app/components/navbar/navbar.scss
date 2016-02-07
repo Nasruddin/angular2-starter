@@ -1,0 +1,16 @@
+// Import variables before use
+@import '../../scss/variables';
+
+nav{
+    margin-bottom: 20px;
+    border-radius: 0;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.navbar-custom {
+    color: #FFFFFF;
+    background-color: #CC3333;
+}

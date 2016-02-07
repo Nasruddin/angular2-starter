@@ -1,0 +1,12 @@
+<h4 class="text-center">List of Tasks</h4>
+<ul class="list-group">
+    <li *ngFor="#task of tasks" class="list-group-item">
+     <a [routerLink]="['Task', {taskId: task.id}]" class="list-group-item-heading">{{task.task}}</a>
+     <button class="btn btn-danger btn-delete" (click)="deleteTodo(task, tasks)">Delete</button>
+    </li>
+  </ul>
+<div class="form-inline add-todo-input">
+    <input class="form-control" #newTask>
+    <button class="btn btn-primary" (click)="addTodo(newTask.value); newTask.value=''">Add Task</button>
+</div>
+<div class="error" *ngIf="errorMessage">{{errorMessage}}</div>

@@ -1,0 +1,36 @@
+{
+  "name": "angular2-",
+  "version": "0.0.1",
+  "description": "Angular2 minimal starter!",
+  "main": "app/index.ts",
+  "scripts": {
+    "devserver": "webpack-dev-server --json --progress",
+    "dumpdev": "rm -rf www/* && webpack --progress --colors -d",
+    "dumpprod": "rm -rf www/* && webpack --progress --colors --config webpack.config.prod.js -p"
+  },
+  "dependencies": {
+    "angular2": "2.0.0-beta.0",
+    "bootstrap": "github:twbs/bootstrap#v4.0.0-alpha",
+    "es6-shim": "^0.33.10",
+    "node-sass": "^3.4.1",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "5.0.0-beta.0"
+  },
+  "devDependencies": {
+    "autoprefixer-loader": "^3.1.0",
+    "css-loader": "^0.21.0",
+    "file-loader": "^0.8.4",
+    "html-loader": "^0.3.0",
+    "html-webpack-plugin": "^1.6.1",
+    "json-loader": "^0.5.3",
+    "path": "^0.4.9",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^3.1.1",
+    "style-loader": "^0.13.0",
+    "ts-loader": "^0.6.0",
+    "typescript": "1.7.3",
+    "util": "^0.10.3",
+    "webpack": "~1.12.6",
+    "webpack-dev-server": "~1.10.0"
+  }
+}

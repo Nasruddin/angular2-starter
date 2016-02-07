@@ -1,0 +1,10 @@
+<div class="text-center">
+    <h4>This is List of Profile in DB</h4>
+</div>
+<div class="list-group">
+    <ul>
+        <li class="list-group-item" [routerLink]="['Profile', {id: user.username}]"  *ngFor='#user of users'>
+            <a href>{{user.username}}</a>
+        </li>
+    </ul>
+</div>

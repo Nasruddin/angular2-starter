@@ -1,0 +1,11 @@
+// Import variables before use
+@import '../../../scss/variables';
+
+.btn-delete {
+    float: right;
+    padding: 2px 5px;
+}
+
+.add-todo-input {
+    margin-top: 15px;
+}

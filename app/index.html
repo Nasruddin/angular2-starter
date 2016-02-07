@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>{%=o.htmlWebpackPlugin.options.pkg.description %}</title>
+        <script>
+            window.todoapp = {};
+            todoapp.name = "{%= o.htmlWebpackPlugin.options.pkg.name %}";
+            todoapp.version = "{%= o.htmlWebpackPlugin.options.pkg.version %}";
+        </script>
+        <script src="node_modules/angular2/bundles/router.dev.js"></script>
+    </head>
+
+    <body>
+        <app>
+            Loading...
+        </app>
+        {% for (var chunk in o.htmlWebpackPlugin.files.chunks) { %}
+        <script src="{%=o.htmlWebpackPlugin.files.chunks[chunk].entry %}"></script>
+        {% } %}
+    </body>
+
+</html>

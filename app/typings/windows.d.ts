@@ -1,0 +1,1 @@
+interface Window { todoapp: any; }

@@ -1,0 +1,7 @@
+<h4 class="text-center">Task Details</h4>
+<div class="jumbotron text-center">
+    <h6>Task Id - {{task?.id}}</h6>
+    <h6>Task - {{task?.task}}</h6>
+    <h6 *ngIf = "!task?.completed">Task Completed ? NO</h6>
+    <h6 *ngIf = "task?.completed">Task Completed ? YES</h6>
+</div>

@@ -1,0 +1,12 @@
+<h3>Login</h3>
+<form class="form-signin" [ngFormModel]="form" (submit)="$event.preventDefault(); onSubmit(form.value)">
+    <div class="form-group">
+        <label for="inputEmail1">Username:</label>
+        <input type="text" ngControl="username" class="form-control" id="inputEmail1" placeholder="username">
+    </div>
+    <div class="form-group">
+        <label for="inputPassword">Password:</label>
+        <input type="password" ngControl="password" class="form-control" id="inputPassword" placeholder="Password">
+    </div>
+    <button type="submit" [disabled]="!form.valid" class="btn btn-default">Submit</button>
+</form>
