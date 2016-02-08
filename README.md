@@ -22,7 +22,7 @@ The reason I created the project was to have a starter angular 2 application wit
 
 `npm run dumpprod`
 
-To access the resource Clone [this](https://github.com/Nasruddin/jwt-auth-springboot). After cloning the running the server it will be allow to access the resouce which will use access token to access resource.
+To access the REST Endpoints, please clone [this](https://github.com/Nasruddin/jwt-auth-springboot). After cloning the repo, try running the server. The server give to access the resouce which is secured by Spring Security and JWT.
 
 ## Contributors
 
